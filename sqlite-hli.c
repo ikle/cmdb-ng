@@ -41,6 +41,8 @@ int sqlite_bind_va (sqlite3_stmt *s, const char *fmt, va_list ap)
 
 				break;
 			}
+		default:
+			return 0;
 		}
 
 	return 1;
